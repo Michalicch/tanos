@@ -1,0 +1,372 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn {
+  display: flex;
+  padding: 22px 46px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #302594;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1980px;
+  height: 805px;
+  background: url("/img/side-image.png") no-repeat right bottom,
+    linear-gradient(135deg, rgba(54, 37, 175, 1), rgba(196, 107, 213, 1));
+}
+
+.header {
+  padding: 20px 152px 104px 235px;
+}
+.container {
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__log {
+}
+.header__menu {
+  display: flex;
+}
+.header__menu li {
+  margin-right: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__item:hover {
+  box-shadow: 0px 3px #ffffff;
+  transition: all 0.4s ease;
+}
+.header__menu li:first-child {
+  margin-right: 18px;
+  position: relative;
+}
+.close {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.dropdown {
+  padding: 6px 0px 6px 19px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background-color: #ffffff;
+  font-weight: 600;
+  border-radius: 7px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.active {
+  opacity: 1;
+}
+.dropdown-item {
+  color: #5c39ba;
+}
+.dropdown-item:hover {
+  box-shadow: 0px 3px rgba(92, 57, 186, 0.4);
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:not(.last) {
+  margin-bottom: 12px;
+}
+
+.header__back-call {
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+.top-info {
+  margin: 0 auto 73px;
+  display: flex;
+  gap: 46px;
+  font-family: "Roboto", sans-serif;
+}
+.banner {
+  max-width: 570px;
+}
+.banner__title {
+  font-size: 55px;
+  margin-bottom: 35px;
+}
+.banner__present {
+  max-width: 332px;
+  font-size: 24px;
+}
+.banner__line {
+  margin: 6px 0 0;
+  width: 173px;
+  border: 2.7px solid #baf1ff;
+}
+.banner__advantages {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px 68px;
+}
+.banner__advantages-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.banner__advantages-item img {
+  max-height: 40px;
+}
+.item-description {
+}
+.calculator {
+  width: 508px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.form__calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+/* .form__calculator:last-child {
+	margin: 0 auto;
+	
+} */
+.form__calculator_title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.form__calculator__item {
+}
+.label-wrapper {
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-wrapper {
+  position: relative;
+}
+.form__calculator__item-title {
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.form__calculator__item-area {
+}
+.form__calculator_input-range {
+  /* margin-bottom: 25px; */
+}
+.form__calculator_input {
+  display: none;
+}
+.form__calculator_input:checked + .form__calculator_label::after {
+  transform: scale(1); /*показываем кружочек выбора опшина*/
+}
+.form__calculator_label {
+  padding-right: 30px;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 95%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__calculator_label::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 31px;
+  height: 31px;
+  background: url(../img/radio_btn.svg);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.form__calculator_label::after {
+  transition: transform 0.5s ease 0s;
+  content: "";
+  position: absolute;
+  top: 5.2px;
+  left: 5.5px;
+  width: 20px;
+  height: 20px;
+  background-color: #baf1ff;
+  border-radius: 50%;
+  transform: scale(0); /*скрываем кружочек выбора опшина*/
+}
+
+/*********** INPUT - RANGE ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 4px;
+  height: 12px;
+}
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -10.5px; /* Centers thumb on the track */
+  background-color: #302594;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+}
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  border-radius: 4px;
+  height: 12px;
+}
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #302594;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+}
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #302594;
+  outline-offset: 0.125rem;
+}
+
+.form__calculator_type-housing {
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input-wrapper label {
+  margin-right: 30px;
+}
+.form__calculator_input {
+}
+.form__calculator_num-rooms {
+}
+.form__calculator_num-rooms label {
+  margin-right: 44px;
+}
+.calculator-btn {
+  margin: 0 auto;
+}
+.scroll__wrapper a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scroll__wrapper span {
+  margin-top: 10px;
+  display: block;
+}
+.footer {
+  margin: 0 auto;
+  width: 1980px;
+  height: 250px;
+  background-color: #25283b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+.wrapper__form-search {
+  /*border: 1px solid red;*/
+}
+.form-search__art {
+}
+.form-search__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-search__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.form-search__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-search__label {
+}
+.form-search_input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.form-search_button {
+  padding: 10px 30px;
+}
+.wrapper__form_reg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid green;*/
+}
+.form__reg {
+}
+.form__reg-body {
+}
+.form__reg_item {
+}
+.form__reg_label {
+}
+.form__reg_input {
+}
+/*таблица*/
+
+.test__result {
+  background-color: #5c39ba;
+  
+}
+.test__result_th, .test__result_td{
+width: 100px;
+text-align: center;
+}
+.test__result_td{
+
+}

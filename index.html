@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ТАНОС - Ремонт под ключ от 2900 руб/м².</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/main.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__nav">
+					<div class="header__log">
+						<a href="#">
+							<img src="./img/logo.svg" alt="Логотип ТАНОС">
+						</a>
+					</div>
+					<ul class="header__menu">
+						<li>
+							<a class="menu__item close" href="#">
+								<img src="./img/close.svg" alt="Закрыть">
+							</a>
+							<div class="dropdown ">
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Услуги</a></li>
+									<li><a class="dropdown-item" href="#">Статьи</a></li>
+									<li><a class="dropdown-item" href="#">Вакансии</a></li>
+									<li><a class="dropdown-item last" href="#">Франшиза</a></li>
+								</ul>
+							</div>
+
+						</li>
+						<li><a class="menu__item drop_menu" href="#">Меню</a></li>
+						<li><a class="menu__item" href="#">Портфолио</a></li>
+						<li><a class="menu__item" href="#">Цены</a></li>
+						<li><a class="menu__item" href="#">Схема работы</a></li>
+						<li><a class="menu__item" href="#">Отзывы</a></li>
+						<li><a class="menu__item" href="#">Контакты</a></li>
+						<li><a class="menu__item" href="#">Гарантия</a></li>
+					</ul>
+					<button class="header__back-call btn" type="submit" title="Обратный звонок">Обратный звонок</button>
+				</div>
+
+			</div>
+		</header>
+		<main class="main">
+			<section class="top-info">
+				<div class="banner">
+					<h1 class="banner__title">Ремонт под ключ от 2900&nbsp;руб/м².</h1>
+					<p class="banner__present">При заказе ремонта делаем дизайн-проект в подарок</p>
+					<hr class="banner__line" align="left">
+					<div class="banner__advantages">
+						<div class="banner__advantages-item">
+							<img src="./img/checked truck.svg" alt="Бесплатный выезд в день обращения">
+							<p class="item-description">Бесплатный выезд в день обращения</p>
+						</div>
+						<div class="banner__advantages-item">
+							<img src="./img/guarantee.svg" alt="Гарантия на работу до 5 лет">
+							<p class="item-description">Гарантия на работу до&nbsp;5&nbsp;лет</p>
+						</div>
+						<div class="banner__advantages-item">
+							<img src="./img/time_management.svg" alt="Жесткое соблюдение сроков">
+							<p class="item-description">Жесткое соблюдение сроков</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="calculator">
+					<form action="#" id="form-go-articul" class="form__calculator">
+						<h2 class="form__calculator_title">Рассчитайте<br> стоимость ремонта</h2>
+						<div class="form__calculator__item">
+							<div class="label-wrapper">
+								<h3 class="form__calculator__item-title">Площадь квартиры:</h3>
+								<p class="form__calculator__item-area"><span id="range-value">50</span>м²</p>
+							</div>
+							<input class="form__calculator_input-range" type="range" id="formArea" name="volume" min="0" max="300" style="background: linear-gradient(to right, rgb(190, 105, 213) 53.3333%, rgb(186, 241, 255) 53.3333%);" />
+						</div>
+
+						<div class="form__calculator_type-housing">
+							<h3 class="form__calculator__item-title">Тип жилья:</h3>
+							<div class="input-wrapper">
+								<input id="second-housing" type="radio" name="type-housing" value="Вторичное жилье"
+									class="form__calculator_input">
+									<label for="second-housing" class="form__calculator_label">Вторичное<br> жилье</label>
+								<input id="new-building" type="radio" name="type-housing" value="Новостройка"
+									class="form__calculator_input">
+									<label for="new-building" class="form__calculator_label">Новостройка</label>
+								<input id="office" type="radio" name="type-housing" value="Офис" class="form__calculator_input">
+								<label for="office" class="form__calculator_label">Офис</label>
+							</div>
+						</div>
+						<div class="form__calculator_num-rooms">
+							<h3 class="form__calculator__item-title">Кол-во комнат:</h3>
+							<div class="input-wrapper">
+								<input id="room-one" type="radio" name="num-rooms" value="Вторичное жилье"
+									class="form__calculator_input">
+									<label for="room-one" class="form__calculator_label">1</label>
+								<input id="room-two" type="radio" name="num-rooms" value="Новостройка"
+									class="form__calculator_input">
+									<label for="room-two" class="form__calculator_label">2</label>
+								<input id="room-three-or-more" type="radio" name="num-rooms" value="Офис" class="form__calculator_input">
+								<label for="room-three-or-more" class="form__calculator_label">3+</label>
+								<input id="room-studio" type="radio" name="num-rooms" value="Студия" class="form__calculator_input">
+								<label for="room-studio" class="form__calculator_label">Студия</label>
+							</div>
+						</div>
+
+
+						<button type="submit" class="btn calculator-btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+			<div class="scroll__wrapper">
+				<a href="#"><img src="./img/arrow down.svg" alt="Scroll">
+					<span>Scroll</span></a>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	<footer class="footer">
+		<div class="foorm__link">
+			<a href="articul.html">Ссылка на формы задание 2, 5</a>
+		</div>
+
+		<!--------------- Форма поиска по артикулу ----------------->
+		<div class="wrapper__form-search">
+			<div class="form-search__art">
+				<form action="#" id="form-go-articul" class="form-search__body">
+					<h3 class="form-search__title">Форма поиска по артикулу</h3>
+					<div class="form-search__item">
+						<label for="formArticul" class="form-search__label">Введите артикул:</label>
+						<input id="formArticul" type="text" class="form-search_input" name="articul"
+							placeholder="Для поиска введите артикул...">
+					</div>
+					<button type="submit" class="form-search_button">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="wrapper__form_reg">
+			<div class="form__reg">
+				<form action="#" id="form-go-reg" class="form__reg-body">
+					<div class="form__reg_item">
+						<label for="formEmail" class="form__reg_label">E-mail:</label>
+						<input id="formEmail" type="text" class="form__reg_input" name="email">
+					</div>
+					<button type="submit" class="form-search_button">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<!--------------- /Форма регистрации ----------------->
+	</footer>
+</body>
+
+</html>
